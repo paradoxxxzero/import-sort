@@ -1,9 +1,9 @@
-import traverse from "babel-traverse";
+import traverse from "@babel/traverse";
 import {
   isImportDefaultSpecifier,
   isImportNamespaceSpecifier,
   isImportSpecifier,
-} from "babel-types";
+} from "@babel/types";
 import {parse} from "babylon";
 import {IImport, NamedMember} from "import-sort-parser";
 
@@ -12,7 +12,7 @@ const findLineColumn = require("find-line-column");
 
 const BABYLON_PLUGINS = [
   "jsx",
-  "flow",
+  // "flow",
   "typescript",
   "doExpressions",
   "objectRestSpread",
