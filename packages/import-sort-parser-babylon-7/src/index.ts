@@ -1,10 +1,10 @@
+import {parse} from "@babel/parser";
 import traverse from "@babel/traverse";
 import {
   isImportDefaultSpecifier,
   isImportNamespaceSpecifier,
   isImportSpecifier,
 } from "@babel/types";
-import {parse} from "babylon";
 import {IImport, NamedMember} from "import-sort-parser";
 
 // TODO: Mocha currently doesn't pick up the declaration in index.d.ts
