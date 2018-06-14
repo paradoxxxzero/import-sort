@@ -12,12 +12,10 @@ const findLineColumn = require("find-line-column");
 
 const BABYLON_PLUGINS = [
   "jsx",
-  // "flow",
   "typescript",
   "doExpressions",
   "objectRestSpread",
-  "decorators",
-  "decorators2",
+  "decorators-legacy",
   "classProperties",
   "classPrivateProperties",
   "classPrivateMethods",
