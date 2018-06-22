@@ -32,6 +32,8 @@ const BABYLON_PLUGINS = [
   "throwExpressions",
   "pipelineOperator",
   "nullishCoalescingOperator",
+  "exportNamespaceFrom",
+  "exportDefaultFrom",
 ];
 
 export function parseImports(code: string): Array<IImport> {
